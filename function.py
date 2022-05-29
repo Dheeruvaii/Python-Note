@@ -10,7 +10,8 @@ def function(a,b):
 def function1(a,b):
     """i got a nice vibe
     i got the guys 
-    program not useful for 3 numbers"""
+    program not useful for 3 numbers
+    dheeruvaii is a god"""
     remainder=(a+b)/2
     return remainder
 X=function1(5,7)
