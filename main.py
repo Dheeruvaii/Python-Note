@@ -55,6 +55,12 @@ print("a is bigger than b ") if a>b else print("b is bigger than a" )
 
 
 # try except
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
 
 from logging import exception
 
