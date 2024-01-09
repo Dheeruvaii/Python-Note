@@ -1,9 +1,10 @@
 # for print rows(*)
-# rows=5
-# for i in range(rows+1):
-#     for j in range(i):
-#         print('*',end='')
-#     print('')
+rows=5
+column=3
+for i in range(rows):
+    for j in range(column):
+        print('*',end='')
+    print('')
 
 
 
@@ -28,9 +29,9 @@
 #         final.append(i+j)
         
 #     print(final)
-# using single line
-    
 
+
+# using single line
 a= [2, 3, 4]
 b= [3, 5, 6]
 
