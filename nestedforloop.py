@@ -37,9 +37,18 @@ b= [3, 5, 6]
 for i in a:
     for j in b:
         if i == j:
+            break
+
             continue
         print(i,'*' ,j,'=',i*j)
 
 # final= [i+j for i in a  for j in b]
 # print(final)
 
+a= [1, 2, 3], [4, 5, 6]
+count=0
+for i in a:
+    for j in i:
+        print('iterations',count,end=':')
+        print(j)
+        count=count+1
