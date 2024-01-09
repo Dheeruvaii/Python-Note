@@ -34,7 +34,12 @@ for i in range(rows):
 # using single line
 a= [2, 3, 4]
 b= [3, 5, 6]
+for i in a:
+    for j in b:
+        if i == j:
+            continue
+        print(i,'*' ,j,'=',i*j)
 
-final= [i+j for i in a  for j in b]
-print(final)
+# final= [i+j for i in a  for j in b]
+# print(final)
 
