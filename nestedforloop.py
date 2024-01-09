@@ -18,4 +18,22 @@
 #         count = count + 1
 
 #     print()
+# single line nested loops using list comphrehensions
+# a=['A','B','C']
+# b=['D','E','F']
+
+# final=[]
+# for i in a:
+#     for j in b:
+#         final.append(i+j)
+        
+#     print(final)
+# using single line
     
+
+a= [2, 3, 4]
+b= [3, 5, 6]
+
+final= [i+j for i in a  for j in b]
+print(final)
+
