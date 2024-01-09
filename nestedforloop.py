@@ -52,3 +52,11 @@ for i in a:
         print('iterations',count,end=':')
         print(j)
         count=count+1
+
+# it give comma seperated value if not equals to each other
+a= [2, 3, 4]
+b= [3, 5, 6]
+final=[[x,y] for x in a for y in b]
+final=[[x,y] for x in a for y in b if x!=y]
+
+print(final)
