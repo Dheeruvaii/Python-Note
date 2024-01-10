@@ -26,3 +26,24 @@ for a,b in x:
     a=("dhiraj")
     for a in "dhiraj":
         print(a)
+
+
+# common python loops over python packages  like numpy array  
+import numpy as np 
+np.random.seed(0)  
+x=np.random.randint(10,size=6)
+y=np.random.randint(10,size=6)
+for value in x:
+    print(value)
+    # one dimensional array
+
+    # crate a two dimensional array 
+
+    import numpy as np
+    np.random.seed(0)
+    x=np.random.randint(10,size=6)
+    y=np.random.randint(10,size=6)
+    z=np.array([x,y])
+    for val in np.nditer(z):
+        print(val)
+
