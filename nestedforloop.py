@@ -60,3 +60,4 @@ final=[[x,y] for x in a for y in b]
 final=[[x,y] for x in a for y in b if x!=y]
 
 print(final)
+
