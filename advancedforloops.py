@@ -102,5 +102,26 @@ for value in x:
                     if d=="p":
                         continue
                     print(d)
- 
+#  continue and break continue
+                    
+                    from math import sqrt
+                    number=0
+
+                    for i in range(10):
+                        number= i**2
+                        if i:
+                            continue
+                        print(str(round(sqrt(number)))+'square' + str(number))
+
+
+                    number=0
+                    for i in range(10):
+                        number=i ** 2
+
+                        if i == 7:
+                            break
+
+                        print(str(round(sqrt(number)))+'squard is equals to'+str(number))
+
+
     
