@@ -47,3 +47,37 @@ for value in x:
     for val in np.nditer(z):
         print(val)
 
+# workflow of for loops over pandas DataFrames
+    
+        import pandas as pd 
+        import csv 
+    data = [
+    ["Country", "Capital", "GDP ($US Trillion)", "Population"],
+    ["Ireland", "Dublin", 0.3337, 4784000],
+    ["United Kingdom", "London", 2.622, 66040000],
+    ["United States", "Washington, D.C.", 19.39, 327200000],
+    ["China", "Beijing", 12.24, 1386000000],
+    ["India", "New Delhi", 2.597, 1339000000],
+    ["Germany", "Berlin", 3.677, 82790000]
+]
+
+def save_to_csv(file_path, data):
+    with open(file_path, 'w', newline='') as file:
+        csv_writer = csv.writer(file)
+        csv_writer.writerows(data)
+
+        
+def main():
+    file_path = 'gdp.csv'
+    save_to_csv(file_path, data)
+    print(f'Data has been saved to {file_path}')
+
+if __name__ == "__main__":
+    main()
+
+
+        # df=pd.read_csv('gdp.csv',index_col=0)
+        # for val in df:
+        #     print(val)
+        #     for label ,row in df.iterrows():
+        #         print(label + "+" + row[''])
