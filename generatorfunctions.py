@@ -17,3 +17,6 @@ def simpleGeneratorFunc():
 x=simpleGeneratorFunc()
 
 print(next(x))
+print(next(x))
+print(next(x))
+
