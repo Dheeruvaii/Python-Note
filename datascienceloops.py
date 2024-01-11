@@ -1,5 +1,5 @@
 
-import pandas as  pd 
+import pandas as pd
 
 data = {'Name': ['John', 'Jane', 'Mike'],
         'Age': [25, 30, 35],
