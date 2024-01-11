@@ -7,3 +7,13 @@ def simpleGeneratorFunc():
 
 for value in simpleGeneratorFunc():
     print(value)
+
+
+def simpleGeneratorFunc():
+    yield 1
+    yield 2
+    yield 3
+
+x=simpleGeneratorFunc()
+
+print(next(x))
