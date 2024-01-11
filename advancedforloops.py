@@ -123,5 +123,3 @@ for value in x:
 
                         print(str(round(sqrt(number)))+'squard is equals to'+str(number))
 
-
-    
