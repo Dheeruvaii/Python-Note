@@ -11,4 +11,3 @@ def swaplist(list):
 
 new_list=[12,13,14,15,16]
 print(swaplist(new_list))
-fsDjh
