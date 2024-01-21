@@ -6,8 +6,9 @@ def swaplist(list):
 
     list.insert(0,last)
     list.append(first)
-    # print(swaplist)
+    print(swaplist)
     return list
 
 new_list=[12,13,14,15,16]
 print(swaplist(new_list))
+fsDjh
