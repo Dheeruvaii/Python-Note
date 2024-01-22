@@ -50,3 +50,8 @@ def my_sum(*args):
     return result
 
 print(my_sum(1, 2, 3))
+
+# $ python string_to_list.py
+['R', 'e', 'a', 'l', 'P', 'y', 't', 'h', 'o', 'n']
+*a, = "RealPython"
+print(a)
