@@ -24,3 +24,21 @@ def myFun(*argv):
  
 myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
 
+
+def myFun(arg1, *argv):
+    print("First argument :", arg1)
+    for arg in argv:
+        print("Next argument through *argv :", arg)
+ 
+ 
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
+
+
+def myFun(*args, **kwargs):
+    print("args: ", args)
+    print("kwargs: ", kwargs)
+ 
+ 
+# Now we can use both *args ,**kwargs
+# to pass arguments to this function :
+myFun('geeks', 'for', 'geeks', first="Geeks", mid="for", last="Geeks")
