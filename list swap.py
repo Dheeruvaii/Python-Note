@@ -17,3 +17,10 @@ print(*num)
 # num=num+1
 # print(**num)
 
+def myFun(*argv):
+    for arg in argv:
+        print(arg)
+ 
+ 
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
+
