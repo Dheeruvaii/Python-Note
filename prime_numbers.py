@@ -1,4 +1,6 @@
 for num in range(2, 23):
+    """
+     using flag"""
     prime = True
     for i in range(2, num):
         if num % i == 0:
@@ -11,6 +13,8 @@ for num in range(2, 23):
 
 
 def prime(x,y):
+    """
+     using func"""
     prime=[]
     for i in range(x,y):
         if i==0 or i==1:
@@ -30,3 +34,16 @@ if len(lst) == 0:
           )
 else:
     print('prime',lst)
+
+
+
+"""
+     using flag"""
+# for num in range(2,11):
+#     if all(num%i!=0 for i in range(2,num)):
+#        print (num)
+
+
+for i in range(2,11):
+    if all(i%num!=0 for num in range(2,i)):
+        print(i)
