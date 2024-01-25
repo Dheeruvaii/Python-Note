@@ -36,4 +36,15 @@ class Dog(Animal):
 my_dog=Dog('jhon')
 my_dog.speak()
 
+dict_comphrensions=[ ( i , i+2) for i in range(5)]
+print(dict_comphrensions)
 
+
+list_comphrension=[i for i in range(0,5)]
+print(list_comphrension)
+
+
+x=list(zip(range(5),range(2,7)))
+print(x)
+# x = list(zip(range(5), range(2, 7)))
+# print(x)
