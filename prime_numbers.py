@@ -47,3 +47,11 @@ else:
 for i in range(2,11):
     if all(i%num!=0 for num in range(2,i)):
         print(i)
+
+
+
+for i in range(2,11):
+    if all(i%num!=0 for num in range(2,i)):
+        print(i,'num')
+    
+    
