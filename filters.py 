@@ -1,0 +1,73 @@
+"""use of filers using func"""
+
+def check(letter):
+    list_of_vowels = ['a', 'e', 'i', 'o', 'u']
+    
+     if letter in list_of_vowels:
+         return True
+     else:
+         return False
+    
+letters=['r','b','c','d','n','f','g']
+letters = ['u', 'a', 'q', 'c', 'i', 'd', 'z', 'p', 'e']
+
+filtered_object=filter(check,letters)
+print("type",type(filtered_object))
+filtered_list=list(filtered_object)
+print(filtered_list)
+
+
+
+"""filters using lamba func"""
+# # from django.test import TestCase
+
+# # # Create your tests here.
+# # my_list=[5,-23,True,False,0,0,{},[]]
+# # filtered_object=filter(None,my_list)
+# # for i in filtered_object:
+# #     print(i)
+
+
+# def check(letter):
+#     list_of_vowels = ['a', 'e', 'i', 'o', 'u']
+    
+#     if letter in list_of_vowels:
+#         return True
+#     else:
+#         return False
+    
+# # letters=['r','b','c','d','n','f','g']
+# letters = ['u', 'a', 'q', 'c', 'i', 'd', 'z', 'p', 'e']
+
+# filtered_object=filter(check,letters)
+# print("type",type(filtered_object))
+# filtered_list=list(filtered_object)
+# print(filtered_list)
+
+ 
+
+
+# #  find out odd and even numbers using filters functions
+# num=[1,2,3,4,5,6,7,8,9,0,22,34,44]
+
+# odd=filter(lambda i:i%2!=0 ,num)
+# even=filter(lambda i:i%2==0,num)
+# print(list(odd))
+# print(list(even))
+
+
+LIST=[1,2,3,4,5,6,]
+for i in LIST:
+    
+    if i%2!=0:
+        print(i)
+    else:
+
+        print('false')
+
+
+else:
+    LIST.append(i)
+    i%2==0
+    print(i,'odd')
+print(LIST)
