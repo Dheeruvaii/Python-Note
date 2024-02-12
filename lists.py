@@ -9,3 +9,10 @@ if 8 in list1:
 #     2
 thislist = ["apple", "banana", "cherry"]
 print(len(thislist))
+
+"""concatinate list"""
+
+lst1 = ['W', 'a', 'w', 'b']
+lst2 = ['e', ' ', 'riting', 'log']
+lst3 = [x + y for x, y in zip(lst1, lst2)]
+print(lst3)
