@@ -50,48 +50,69 @@ for value in x:
 
 #     # crate a two dimensional array 
 
-    # import numpy as np
-    # np.random.seed(0)
-    # x=np.random.randint(10,size=6)
-    # y=np.random.randint(10,size=6)
-    # z=np.array([x,y])
-    # for val in np.nditer(z):
-    #     print(val)
+    import numpy as np
+    np.random.seed(0)
+    x=np.random.randint(10,size=6)
+    y=np.random.randint(10,size=6)
+    z=np.array([x,y])
+    for val in np.nditer(z):
+        print(val)
 
 import numpy as np
 np.random.seed(9)
 x=np.random.randint(10,size=6)
 y=np.random.randint(10,size=6)
-for value in x,y:
+for value in  x,y:
     print(x,y)
 # workflow of for loops over pandas DataFrames
     
-#         import pandas as pd 
-#         import csv 
-#     data = [
-#     ["Country", "Capital", "GDP ($US Trillion)", "Population"],
-#     ["Ireland", "Dublin", 0.3337, 4784000],
-#     ["United Kingdom", "London", 2.622, 66040000],
-#     ["United States", "Washington, D.C.", 19.39, 327200000],
-#     ["China", "Beijing", 12.24, 1386000000],
-#     ["India", "New Delhi", 2.597, 1339000000],
-#     ["Germany", "Berlin", 3.677, 82790000]
-# ]
+import pandas as pd 
+import csv 
+data = [
+    ["Country", "Capital", "GDP ($US Trillion)", "Population"],
+    ["Ireland", "Dublin", 0.3337, 4784000],
+    ["United Kingdom", "London", 2.622, 66040000],
+    ["United States", "Washington, D.C.", 19.39, 327200000],
+    ["China", "Beijing", 12.24, 1386000000],
+    ["India", "New Delhi", 2.597, 1339000000],
+    ["Germany", "Berlin", 3.677, 82790000]
+]
 
-# def save_to_csv(file_path, data):
-#     with open(file_path, 'w', newline='') as file:
-#         csv_writer = csv.writer(file)
-#         csv_writer.writerows(data)
+def save_to_csv(file_path, data):
+    with open(file_path, 'w', newline='') as file:
+        csv_writer = csv.writer(file)
+        csv_writer.writerows(data)
 
         
-# def main():
-#     file_path = 'gdp.csv'
-#     save_to_csv(file_path, data)
-#     print(f'Data has been saved to {file_path}')
+def main():
+    file_path = 'gdp.csv'
+    save_to_csv(file_path, data)
+    print(f'Data has been saved to {file_path}')
 
-# if __name__ == "__main__":
-    # main()
+if __name__ == "__main__":
+    main()
 
+import pandas as pd 
+import csv
+
+
+personal_data= [
+                ["Name","address" ,"professions"],
+                [
+                    "Dhiraj","Surkhet","Backenddeveloper"
+                ]
+]
+def save_to_csv(file_path,personal_data):
+    with open(file_path, 'w' ,newline ='') as file:
+        write_file=csv.writer(file)
+        write_file.writerows(personal_data)
+def main():
+    file_path="personal_informations.png"
+    save_to_csv(file_path,personal_data)
+    print(file_path)
+
+if __name__=="__main__":
+    main()
 
         # df=pd.read_csv('gdp.csv',index_col=0)
         # for val in df:
