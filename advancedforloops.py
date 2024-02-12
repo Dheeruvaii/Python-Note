@@ -12,13 +12,20 @@ for a,b in x:
     print(a,"plus",b,"plus",a+b)
 
 # dictionary over for loops (python dictionary composed of key value pairs so in a-each loops we have to access each time key and value)
-    stocks={
-        "1":"2",
-        "3":"4",
-        "5":"6"
+    # stocks={
+    #     "1":"2",
+    #     "3":"4",
+    #     "5":"6"
+    # }
+    # for key,value in stocks.items():
+    #     print(key + ":" + str(value))
+    dict={
+        "name":"dhiraj",
+        "address":"nepal",
+        "work":"developer"
     }
-    for key,value in stocks.items():
-        print(key + ":" + str(value))
+    for key ,value in dict.items():
+        print(key +  ":" + str(value))
 
 
 # strings (for loops can iterate through the each character  in a string)
