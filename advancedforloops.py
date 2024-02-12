@@ -106,6 +106,7 @@ def save_to_csv(file_path,personal_data):
     with open(file_path, 'w' ,newline ='') as file:
         write_file=csv.writer(file)
         write_file.writerows(personal_data)
+
 def main():
     file_path="personal_informations.png"
     save_to_csv(file_path,personal_data)
@@ -118,46 +119,46 @@ if __name__=="__main__":
         # for val in df:
         #     print(val)
         #     for label ,row in df.iterrows():
-        #         print(label + "+" + row[''])
-# the range functions lets see how can we use loops to iterate over any data structure/sequences
+                # print(label + "+" + row[''])
+"""the range functions lets see how can we use loops to iterate over any data structure/sequences"""
     # three eays to call range()
-    # range(stop)
-    # range(st,stop)
-    # range(start,stop,step)
-    # go with one by one
+    range(stop)
+    range(st,stop)
+    range(start,stop,step)
+    go with one by one
 
-#     for i in range(3):
-#         print(i)
+    for i in range(3):
+        print(i)
 
-#     languages=[['a','b'],['p','j']]
-#     for x in languages:
-#         print("------")
-#         for lang in x:
-#             print(lang)
-# #   continue and break for a loo[LookupError]
-#             for c in languages:
-#                 for d in c:
-#                     if d=="p":
-#                         continue
-#                     print(d)
-# #  continue and break continue
+    languages=[['a','b'],['p','j']]
+    for x in languages:
+        print("------")
+        for lang in x:
+            print(lang)
+#   continue and break for a loo[LookupError]
+            for c in languages:
+                for d in c:
+                    if d=="p":
+                        continue
+                    print(d)
+#  continue and break continue
                     
-#                     from math import sqrt
-#                     number=0
+                    from math import sqrt
+                    number=0
 
-#                     for i in range(10):
-#                         number= i**2
-#                         if i:
-#                             continue
-#                         print(str(round(sqrt(number)))+'square' + str(number))
+                    for i in range(10):
+                        number= i**2
+                        if i:
+                            continue
+                        print(str(round(sqrt(number)))+'square' + str(number))
 
 
-#                     number=0
-#                     for i in range(10):
-#                         number=i ** 2
+                    number=0
+                    for i in range(10):
+                        number=i ** 2
 
-#                         if i == 7:
-#                             break
+                        if i == 7:
+                            break
 
-#                         print(str(round(sqrt(number)))+'squard is equals to'+str(number))
+                        print(str(round(sqrt(number)))+'squard is equals to'+str(number))
 
