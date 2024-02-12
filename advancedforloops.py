@@ -4,6 +4,10 @@ for var in x:
     print("index" + str(x.index(var))+ ":" ,var)
 
 
+y=(20,30,40,50,60)
+for i in y :
+    print("index" + str(y.index(var))+ ":",i)
+
 
 
 #  """tuble inside list call over a loop"""
@@ -35,25 +39,31 @@ for a,b in x:
         print(a)
 
 
-# common python loops over python packages  like numpy array  
+# # common python loops over python packages  like numpy array  
 import numpy as np 
-np.random.seed(0)  
-x=np.random.randint(10,size=6)
+np.random.seed(10)  
+x=np.random.randint(10,size=10)
 y=np.random.randint(10,size=6)
 for value in x:
     print(value)
-    # one dimensional array
+#     # one dimensional array
 
-    # crate a two dimensional array 
+#     # crate a two dimensional array 
 
-    import numpy as np
-    np.random.seed(0)
-    x=np.random.randint(10,size=6)
-    y=np.random.randint(10,size=6)
-    z=np.array([x,y])
-    for val in np.nditer(z):
-        print(val)
+    # import numpy as np
+    # np.random.seed(0)
+    # x=np.random.randint(10,size=6)
+    # y=np.random.randint(10,size=6)
+    # z=np.array([x,y])
+    # for val in np.nditer(z):
+    #     print(val)
 
+import numpy as np
+np.random.seed(9)
+x=np.random.randint(10,size=6)
+y=np.random.randint(10,size=6)
+for value in x,y:
+    print(x,y)
 # workflow of for loops over pandas DataFrames
     
 #         import pandas as pd 
@@ -95,38 +105,38 @@ for value in x:
     # range(start,stop,step)
     # go with one by one
 
-    for i in range(3):
-        print(i)
+#     for i in range(3):
+#         print(i)
 
-    languages=[['a','b'],['p','j']]
-    for x in languages:
-        print("------")
-        for lang in x:
-            print(lang)
-#   continue and break for a loo[LookupError]
-            for c in languages:
-                for d in c:
-                    if d=="p":
-                        continue
-                    print(d)
-#  continue and break continue
+#     languages=[['a','b'],['p','j']]
+#     for x in languages:
+#         print("------")
+#         for lang in x:
+#             print(lang)
+# #   continue and break for a loo[LookupError]
+#             for c in languages:
+#                 for d in c:
+#                     if d=="p":
+#                         continue
+#                     print(d)
+# #  continue and break continue
                     
-                    from math import sqrt
-                    number=0
+#                     from math import sqrt
+#                     number=0
 
-                    for i in range(10):
-                        number= i**2
-                        if i:
-                            continue
-                        print(str(round(sqrt(number)))+'square' + str(number))
+#                     for i in range(10):
+#                         number= i**2
+#                         if i:
+#                             continue
+#                         print(str(round(sqrt(number)))+'square' + str(number))
 
 
-                    number=0
-                    for i in range(10):
-                        number=i ** 2
+#                     number=0
+#                     for i in range(10):
+#                         number=i ** 2
 
-                        if i == 7:
-                            break
+#                         if i == 7:
+#                             break
 
-                        print(str(round(sqrt(number)))+'squard is equals to'+str(number))
+#                         print(str(round(sqrt(number)))+'squard is equals to'+str(number))
 
