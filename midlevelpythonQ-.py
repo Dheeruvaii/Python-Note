@@ -1,3 +1,10 @@
+""" randomize the list """
+import random 
+my_list=[1,2,3,4,5]
+new_list=random.shuffle(my_list)
+print(my_list)
+
+
 #no of guess 5
 #print number of guess left
 #after print game over
@@ -13,3 +20,4 @@ for i in range(1,10):
     else:
         print("predicted value is bigger than deifened value")
     print("guess again")
+

@@ -25,7 +25,7 @@ finally:
 
 original_list = [[1, 2, 3], [4, 5, 6]]
 
-shallow_copied_list = copy.copy(original_list)
+shallow_copied_list = copy.deepcopy(original_list)
 
 original_list[0] = 1  # Modifying the original list
 
